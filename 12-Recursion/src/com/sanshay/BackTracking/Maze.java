@@ -109,6 +109,7 @@ public class Maze {
         if(c < maze[0].length - 1) {
             pathRestriction(p+'R',maze,r,c+1);
         }
+        
 
 
     }
