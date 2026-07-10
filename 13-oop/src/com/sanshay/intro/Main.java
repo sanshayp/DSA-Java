@@ -23,20 +23,20 @@ public class Main {
 //        rahul.greeting();
 //
 //        kunal.changeName("Shoe lover");
-        System.out.println(kunal.rno);
-        System.out.println(kunal.name);
-        System.out.println(kunal.marks);
+//        System.out.println(kunal.rno);
+//        System.out.println(kunal.name);
+//        System.out.println(kunal.marks);
 
-//        Student random = new Student(rahul);
-//        System.out.println(random.name);
+        Student random = new Student(rahul);
+        System.out.println(random.marks);
 
         Student random2 = new Student();
-        System.out.println(random2.marks);
+//        System.out.println(random2.name);
         Student one = new Student();
         Student two = one;
         one.name = "Something something";
 
-        System.out.println(two.name);
+//        System.out.println(two.name);
 
 
     }
