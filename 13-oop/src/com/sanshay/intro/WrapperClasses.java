@@ -13,7 +13,16 @@ public class WrapperClasses {
 
         Integer num = 45;  // obj3ecct so it has many properties
 
+       final A kunal = new A("sanshay");
+       kunal.name ="san";
 
+//cant reassign
+//       kunal = new A("new");
+
+        A obj;
+        for (int i = 0; i < 10000; i++) {
+            obj = new A("randok");
+        }
     }
     static void swap(int a ,int b){
         int temp =a;
@@ -28,5 +37,18 @@ public class WrapperClasses {
         b=temp; // it should but it will no swap final  class
 
         // final prevent from being changed
+    }
+}
+class A{
+  final int num = 10;
+  String name;
+
+  public A(String name){
+      this.name = name;
+  }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("destroysed");
     }
 }
