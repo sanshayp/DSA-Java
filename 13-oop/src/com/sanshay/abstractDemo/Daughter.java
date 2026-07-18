@@ -3,7 +3,7 @@ package com.sanshay.abstractDemo;
 public class Daughter extends Parent{
 
     public Daughter(int age){
-        super(age);
+//        super(age);
 //        this.age = age; this calls  this.age from parent only
     }
     @Override
